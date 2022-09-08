@@ -45,12 +45,12 @@ argparse 1.1
 ## For PE dataset
 
 
-bash process_pe.sh
+bash process_pe.sh  
 python run.py --dataset-name PE --data-path ./data/PE_data_df.csv --split-test-file-path ./data/test_paragraph_index.json --vocab-path ./data/bow_vocab.json --batch-size 32 --showtime 2 --early-num 5 --max-AC-num 50 --AC-type-label-num 3
 
 
 ## For CDCP dataset
 
 
-bash process_cdcp.sh
+bash process_cdcp.sh  
 python run.py  --dataset-name CDCP --data-path ./data/cdcp_data_bert_df.csv --split-test-file-path ./data/cdcp_test_index.json --vocab-path ./data/bow_vocab_cdcp.json --batch-size 16 --showtime 10 --early-num 10 --max-AC-num 12 --AC-type-label-num 5
